@@ -1,8 +1,11 @@
 #!/bin/bash
 
-echo "=========================================="
-echo "BẮT ĐẦU GỠ CÀI ĐẶT TOÀN BỘ OPENCLAW"
-echo "=========================================="
+echo "unistall using openclaw"
+openclaw uninstall
+
+echo "unistall using npm and pnpm"
+npm uninstall -g openclaw
+pnpm uninstall -g openclaw
 
 # 1. Gỡ cài đặt qua NPM (Yêu cầu sudo để xóa package global)
 echo "[1/4] Đang gỡ cài đặt các package npm global (openclaw, clawdbot, moltbot)..."
